@@ -1,0 +1,45 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "jest": true, 
+    "node": true,
+    "es6": true
+  },
+
+  "extends": ["plugin:prettier/recommended"],
+
+  "parser": "babel-eslint",
+
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "legacyDecorators": true
+    }
+  },
+
+  "plugins": [],
+
+  "rules": {
+    "eqeqeq": ["error", "always"],
+    "curly": 0,
+    "quotes": 0,
+    "no-undef": "error",
+    "id-length": ["error", { "min": 1, "max": 40 }],
+    "valid-typeof": "error",
+    "no-unreachable": "error",
+    "no-unused-vars": "error",
+    "no-const-assign": "error",
+    "constructor-super": "error",
+    "no-this-before-super": "error",
+    "class-methods-use-this": 0,
+    "import/no-namespace": 0,
+    "require-atomic-updates": 0,
+    "semi": 0,
+    "no-shadow": 0,
+    "no-extra-semi": 0,
+    "comma-dangle": 0
+  }
+}
